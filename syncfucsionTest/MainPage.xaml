@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+             xmlns:ListCollection="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:syncfucsionTest"
+             xmlns:tabview="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="syncfucsionTest.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="CartButton" 
+                Text="Cart"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="End" 
+                CornerRadius="12"
+                HeightRequest="40"
+                WidthRequest="80"
+                TextColor="Black"
+                FontSize="Large"
+                BorderWidth="1"
+                FontAttributes="Bold"
+                BackgroundColor="WhiteSmoke" 
+                Clicked="CartButton_Clicked" />
+
+            <tabview:SfTabView EnableSwiping="False"
+                x:Name="CallsTab1" 
+                VisibleHeaderCount="4"
+                BackgroundColor="WhiteSmoke"
+                TabHeight="72"
+                DisplayMode="ImageWithText"
+                TabHeaderPosition="Bottom">
+                <tabview:SfTabView.Items>
+                    <tabview:SfTabItem Title="Appetizers"
+                        IconFont="A"
+                        FontIconFontSize="22">
+                        <tabview:SfTabItem.Content>
+                            <StackLayout BackgroundColor="White" x:Name="AppetizersGrid">
+                                <carousel:SfCarousel BackgroundColor="White" WidthRequest="400" HeightRequest="600">
+                                    <carousel:SfCarousel.ItemsSource>
+                                        <ListCollection:List x:TypeArguments="carousel:SfCarouselItem">
+                                            <carousel:SfCarouselItem>
+                                                <carousel:SfCarouselItem.ItemContent>
+                                                    <StackLayout BackgroundColor="Red">
+                                                        <Label Text="Title" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" FontSize="38"/>
+                                                        <Label Text="Description" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" FontSize="24"/>
+                                                        <Button x:Name="OrderButton" 
+                                                            Text="Order Now!"
+                                                            VerticalOptions="CenterAndExpand"
+                                                            HorizontalOptions="Center" 
+                                                            CornerRadius="12"
+                                                            HeightRequest="40"
+                                                            WidthRequest="150"
+                                                            FontSize="Large"
+                                                            TextColor="Black"
+                                                            BorderWidth="1"
+                                                            BackgroundColor="White"
+                                                            Clicked="OrderButton_Clicked" />
+                                                    </StackLayout>
+                                                </carousel:SfCarouselItem.ItemContent>
+                                            </carousel:SfCarouselItem>
+                                            <carousel:SfCarouselItem>
+                                                <carousel:SfCarouselItem.ItemContent>
+                                                    <StackLayout BackgroundColor="Green">
+
+                                                    </StackLayout>
+                                                </carousel:SfCarouselItem.ItemContent>
+                                            </carousel:SfCarouselItem>
+                                            <carousel:SfCarouselItem>
+                                                <carousel:SfCarouselItem.ItemContent>
+                                                    <StackLayout BackgroundColor="Blue">
+
+                                                    </StackLayout>
+                                                </carousel:SfCarouselItem.ItemContent>
+                                            </carousel:SfCarouselItem>
+                                        </ListCollection:List>
+                                    </carousel:SfCarousel.ItemsSource>
+                                </carousel:SfCarousel>
+                            </StackLayout>
+                        </tabview:SfTabItem.Content>
+                    </tabview:SfTabItem>
+                    <tabview:SfTabItem Title="Entres"
+                        IconFont="B"
+                        FontIconFontSize="22">
+                        <tabview:SfTabItem.Content>
+                            <StackLayout BackgroundColor="White" x:Name="EntresGrid">
+                                <carousel:SfCarousel BackgroundColor="White" WidthRequest="400" HeightRequest="600">
+                                    <carousel:SfCarousel.ItemsSource>
+                                        <ListCollection:List x:TypeArguments="carousel:SfCarouselItem">
+                                            <carousel:SfCarouselItem>
+                                                <carousel:SfCarouselItem.ItemContent>
+                                                    <StackLayout BackgroundColor="Coral">
+
+                                                    </StackLayout>
+                                                </carousel:SfCarouselItem.ItemContent>
+                                            </carousel:SfCarouselItem>
+                                            <carousel:SfCarouselItem>
+                                                <carousel:SfCarouselItem.ItemContent>
+                                                    <Grid BackgroundColor="Wheat">
+
+                                                    </Grid>
+                                                </carousel:SfCarouselItem.ItemContent>
+                                            </carousel:SfCarouselItem>
+                                            <carousel:SfCarouselItem>
+                                                <carousel:SfCarouselItem.ItemContent>
+                                                    <Grid BackgroundColor="Aqua">
+
+                                                    </Grid>
+                                                </carousel:SfCarouselItem.ItemContent>
+                                            </carousel:SfCarouselItem>
+                                        </ListCollection:List>
+                                    </carousel:SfCarousel.ItemsSource>
+                                </carousel:SfCarousel>
+                            </StackLayout>
+                        </tabview:SfTabItem.Content>
+                    </tabview:SfTabItem>
+                    <tabview:SfTabItem Title="Desserts"
+                        IconFont="C"
+                        FontIconFontSize="22">
+                        <tabview:SfTabItem.Content>
+                            <Grid BackgroundColor="White" x:Name="DessertsGrid">
+                                <carousel:SfCarousel BackgroundColor="White" WidthRequest="400" HeightRequest="600">
+                                    <carousel:SfCarousel.ItemsSource>
+                                        <ListCollection:List x:TypeArguments="carousel:SfCarouselItem">
+                                            <carousel:SfCarouselItem>
+                                                <carousel:SfCarouselItem.ItemContent>
+                                                    <Grid BackgroundColor="Magenta">
+
+                                                    </Grid>
+                                                </carousel:SfCarouselItem.ItemContent>
+                                            </carousel:SfCarouselItem>
+                                            <carousel:SfCarouselItem>
+                                                <carousel:SfCarouselItem.ItemContent>
+                                                    <Grid BackgroundColor="Maroon">
+
+                                                    </Grid>
+                                                </carousel:SfCarouselItem.ItemContent>
+                                            </carousel:SfCarouselItem>
+                                            <carousel:SfCarouselItem>
+                                                <carousel:SfCarouselItem.ItemContent>
+                                                    <Grid BackgroundColor="MidnightBlue">
+
+                                                    </Grid>
+                                                </carousel:SfCarouselItem.ItemContent>
+                                            </carousel:SfCarouselItem>
+                                        </ListCollection:List>
+                                    </carousel:SfCarousel.ItemsSource>
+                                </carousel:SfCarousel>
+                            </Grid>
+                        </tabview:SfTabItem.Content>
+                    </tabview:SfTabItem>
+                    <tabview:SfTabItem Title="Drinks"
+                        IconFont="D"
+                        FontIconFontSize="22">
+                        <tabview:SfTabItem.Content>
+                            <Grid BackgroundColor="White" x:Name="DrinksGrid">
+                                <carousel:SfCarousel BackgroundColor="White" WidthRequest="400" HeightRequest="600">
+                                    <carousel:SfCarousel.ItemsSource>
+                                        <ListCollection:List x:TypeArguments="carousel:SfCarouselItem">
+                                            <carousel:SfCarouselItem>
+                                                <carousel:SfCarouselItem.ItemContent>
+                                                    <Grid BackgroundColor="Moccasin">
+
+                                                    </Grid>
+                                                </carousel:SfCarouselItem.ItemContent>
+                                            </carousel:SfCarouselItem>
+                                            <carousel:SfCarouselItem>
+                                                <carousel:SfCarouselItem.ItemContent>
+                                                    <Grid BackgroundColor="DarkGoldenrod">
+
+                                                    </Grid>
+                                                </carousel:SfCarouselItem.ItemContent>
+                                            </carousel:SfCarouselItem>
+                                            <carousel:SfCarouselItem>
+                                                <carousel:SfCarouselItem.ItemContent>
+                                                    <Grid BackgroundColor="LightCyan">
+
+                                                    </Grid>
+                                                </carousel:SfCarouselItem.ItemContent>
+                                            </carousel:SfCarouselItem>
+                                        </ListCollection:List>
+                                    </carousel:SfCarousel.ItemsSource>
+                                </carousel:SfCarousel>
+                            </Grid>
+                        </tabview:SfTabItem.Content>
+                    </tabview:SfTabItem>
+                </tabview:SfTabView.Items>
+            </tabview:SfTabView >
+        </StackLayout>
+
+
+
+        <!--<CarouselView ItemsSource="{Binding }"
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Frame>
+                            <StackLayout>
+                                <Label>
+                                    />
+
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>-->
+
+
+
+    </ContentPage.Content>
+</ContentPage>

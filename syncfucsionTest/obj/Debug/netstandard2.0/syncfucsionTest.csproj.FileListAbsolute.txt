@@ -1,0 +1,11 @@
+C:\Users\joshua\source\repos\syncfucsionTest\syncfucsionTest\bin\Debug\netstandard2.0\syncfucsionTest.deps.json
+C:\Users\joshua\source\repos\syncfucsionTest\syncfucsionTest\bin\Debug\netstandard2.0\syncfucsionTest.dll
+C:\Users\joshua\source\repos\syncfucsionTest\syncfucsionTest\bin\Debug\netstandard2.0\syncfucsionTest.pdb
+C:\Users\joshua\source\repos\syncfucsionTest\syncfucsionTest\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\joshua\source\repos\syncfucsionTest\syncfucsionTest\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\joshua\source\repos\syncfucsionTest\syncfucsionTest\obj\Debug\netstandard2.0\syncfucsionTest.AssemblyInfoInputs.cache
+C:\Users\joshua\source\repos\syncfucsionTest\syncfucsionTest\obj\Debug\netstandard2.0\syncfucsionTest.AssemblyInfo.cs
+C:\Users\joshua\source\repos\syncfucsionTest\syncfucsionTest\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\joshua\source\repos\syncfucsionTest\syncfucsionTest\obj\Debug\netstandard2.0\syncfucsionTest.dll
+C:\Users\joshua\source\repos\syncfucsionTest\syncfucsionTest\obj\Debug\netstandard2.0\syncfucsionTest.pdb
+C:\Users\joshua\source\repos\syncfucsionTest\syncfucsionTest\obj\Debug\netstandard2.0\syncfucsionTest.csprojAssemblyReference.cache
